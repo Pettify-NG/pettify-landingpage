@@ -7,7 +7,11 @@ import Image from "next/image";
 
 
 export default function Header() {
- const [isOpen, setIsOpen]=useState(false)
+ const [isOpen, setIsOpen]=useState(false);
+//  const scrollToSection = (id) => {
+//     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+//   };
+
   return (
       <header className="bg-gray-300 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
@@ -22,7 +26,7 @@ export default function Header() {
           <Link href="/pricing" className="text-orange-600 hover:underline">
             Pricing
           </Link>
-          <Link href="/faqs" className="text-orange-600 hover:underline">
+          <Link href="#Faq" id='Faq' className="text-orange-600 hover:underline">
             FAQs
           </Link>
           <Link href="/blog" className="text-orange-600 hover:underline">
@@ -49,7 +53,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="md:hidden absolute top-full left-0 w-full bg-white shadow-md p-4 mt-96">
+        <nav className="md:hidden absolute top-full left-0 w-full bg-white shadow-md p-4">
           <Link href="/" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
             Home
           </Link>
