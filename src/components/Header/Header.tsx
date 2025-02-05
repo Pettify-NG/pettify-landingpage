@@ -2,7 +2,7 @@
 import React, {useState} from 'react'
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import Logo from '@/assets/pettify-logo-removebg-preview.png'
+import Logo from '@/assets/Pettify__11_-removebg-preview.png'
 import Image from "next/image";
 
 
@@ -11,28 +11,29 @@ export default function Header() {
 //  const scrollToSection = (id) => {
 //     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 //   };
+ 
 
   return (
       <header className="bg-gray-300 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
-       <Image src={Logo} alt="Logo" width={100} height={70} />
+       <Image src={Logo} alt="Logo" width={120} height={100} />
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6">
           <Link href="/" className="text-orange-600 hover:underline font-DM_sans">
             Home
           </Link>
-          <Link href="/pricing" className="text-orange-600 hover:underline">
+          <Link href="/" className="text-orange-600 hover:underline">
             Pricing
           </Link>
-          <Link href="#Faq" id='Faq' className="text-orange-600 hover:underline">
+          <Link href="/" className="text-orange-600 hover:underline">
             FAQs
           </Link>
-          <Link href="/blog" className="text-orange-600 hover:underline">
+          <Link href="/Blog" className="text-orange-600 hover:underline">
             Blog
           </Link>
-          <Link href="/contact" className="text-orange-600 hover:underline">
+          <Link href="/" className="text-orange-600 hover:underline">
             Contact
           </Link>
            <Link href="/create">
@@ -44,7 +45,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 focus:outline-none"
+          className="md:hidden p-2 focus:outline-non text-orange-500"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}

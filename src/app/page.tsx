@@ -9,6 +9,7 @@ import Faq from '@/components/Faq/Faq'
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
 
+
 export default function Home() {
   return (
     <>
@@ -20,6 +21,7 @@ export default function Home() {
       <Faq/>
       <Contact/>
       <Footer/>
+
       </>
   );
 }

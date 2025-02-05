@@ -12,7 +12,7 @@ export default function Faq() {
     {question: 'Is it safe to buy pets through Pettify?', answer: 'Pettify vets sellers and provides a safe platform to connect with breeders, but we recommend always verifying the seller and ensuring the pet’s health records before making any purchase.'},
     {question: 'What payment methods are accepted?', answer: 'Pettify supports various payment methods such as direct transfers or payments via debit/credit cards through Paystack.'},
     {question: 'Can I get a refund for my purchase?', answer: 'Refund policies are determined by Pettify only if the received Pet was in bad condition or false pet delivery. We can also refund canceled Vet appointments. Please contact Pettify through email hello@pettify.co directly for any refund requests or help.'},
-    {question: 'How do I contact customer support?', answer: 'Refund policies are determined by Pettify only if the received Pet was in bad condition or false pet delivery. We can also refund canceled Vet appointments. Please contact Pettify through email hello@pettify.co directly for any refund requests or help.'}
+    {question: 'How do I contact customer support?', answer: 'If you have any questions or issues, you can contact Pettify support via email at hello@pettify.co or through the app’s support section and social media channels.'}
   ];
 
   const [openIndex, setOpenIndex] = useState(null);

@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Linkedin } from "lucide-react";
-import Logo from "@/assets/pettify-logo.png";
+import Logo from "@/assets/Pettify__11_-removebg-preview.png";
 import { BsWhatsapp } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer className="bg-orange-500 text-white py-8 px-6">
+    <footer className="bg-gray-300 text-orange-500 py-8 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         
         {/* Logo Section */}
@@ -18,10 +18,10 @@ export default function Footer() {
         {/* Navigation Links */}
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 text-center md:text-left">
           <Link href="/" className="hover:underline">Home</Link>
-          <Link href="/" className="hover:underline">Pricing</Link>
-          <Link href="/" className="hover:underline">FAQs</Link>
-          <Link href="/" className="hover:underline">Blog</Link>
-          <Link href="/" className="hover:underline">Contact</Link>
+          <Link href="#Customer" className="hover:underline">Pricing</Link>
+          <Link href="#Faq" className="hover:underline">FAQs</Link>
+          <Link href="/Blog" className="hover:underline">Blog</Link>
+          <Link href="#Contact" className="hover:underline">Contact</Link>
         </div>
 
         {/* Legal Links */}
