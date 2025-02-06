@@ -6,11 +6,11 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form Data:", formData);
     setSubmitted(true);
@@ -18,7 +18,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-10">
+    <div id="contact" className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-10">
       <h2 className="text-2xl font-bold text-orange-500 mb-4 text-center">Contact Us</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name Field */}
@@ -59,7 +59,7 @@ export default function Contact() {
             required
             className="w-full p-2 border border-gray-300 rounded mt-1"
             placeholder="Your message..."
-            rows="4"
+            rows={4}
           />
         </div>
 
