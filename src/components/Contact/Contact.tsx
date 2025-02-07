@@ -18,7 +18,11 @@ export default function Contact() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-10"id="contact">
+=======
+    <div id="contact" className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-10">
+>>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
       <h2 className="text-2xl font-bold text-orange-500 mb-4 text-center">Contact Us</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name Field */}

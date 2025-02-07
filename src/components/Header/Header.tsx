@@ -26,13 +26,21 @@ export default function Header() {
           <Link href="/#pricing" className="text-orange-600 hover:underline">
             Pricing
           </Link>
+<<<<<<< HEAD
         <Link href="/#faq" className="text-orange-600 hover:underline">
+=======
+          <Link href="/#faq" className="text-orange-600 hover:underline">
+>>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
             FAQs
           </Link>
           <Link href="/Blog" className="text-orange-600 hover:underline" >
             Blog
           </Link>
+<<<<<<< HEAD
          <Link href="/#contact" className="text-orange-600 hover:underline">
+=======
+          <Link href="/#contact" className="text-orange-600 hover:underline">
+>>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
             Contact
           </Link>
            <Link href="/create">
@@ -60,7 +68,11 @@ export default function Header() {
           <Link href="/#pricing" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
             About
           </Link>
+<<<<<<< HEAD
           <Link href="/#faqs" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
+=======
+          <Link href="/#faq" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
+>>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
             Services
           </Link>
           <Link href="/#blog" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>

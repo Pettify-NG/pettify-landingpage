@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+<<<<<<< HEAD
 // import Header from '@/components/header/header'
 // import Footer from '@/components/footer/footer'
 // import Our from '@/components/our/our'
 // import Blog from '@/components/Blog/Blog'
+=======
+// import Header from "@/components/Header/Header";
+import Blog from '@/components/Blog/Blog'
+>>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
 
 const DM_sans = DM_Sans({
   variable: "--font-DM_sans",
@@ -29,9 +34,13 @@ export default function RootLayout({
         className={`${DM_sans.variable}`}
       >
         {/* <Header/> */}
+<<<<<<< HEAD
         {/* <Blog/> */}
         {/* <Our/> */}
         {/* <Footer/> */}
+=======
+        
+>>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
         {children}
         
       </body>

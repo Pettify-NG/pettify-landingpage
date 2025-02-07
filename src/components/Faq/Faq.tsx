@@ -15,14 +15,24 @@ export default function Faq() {
     {question: 'How do I contact customer support?', answer: 'If you have any questions or issues, you can contact Pettify support via email at hello@pettify.co or through the app’s support section and social media channels.'}
   ];
 
+<<<<<<< HEAD
 const [openIndex, setOpenIndex] = useState<number | null>(null);
 
  const toggleFAQ = (index: number) => {
+=======
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+>>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
+<<<<<<< HEAD
     <div className='max-w-3xl mx-auto p-6'id='faq'>
+=======
+    <div id="faq" className='max-w-3xl mx-auto p-6'>
+>>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
       <h2 className='text-2xl font-bold text-orange-500 text-center mb-6'>Frequently Asked Questions</h2>
       {faqs.map((faq, index) => (
         <div key={index} className='mb-4 border-b border-gray-300 pb-2 hover:scale-95'>
