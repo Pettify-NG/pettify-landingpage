@@ -31,7 +31,7 @@ export default function Customer() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100 px-4 md:px-16 lg:px-32">
+    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100 px-4 md:px-16 lg:px-32 mt-10">
       
       {/* Role Selection Buttons */}
       <div className="bg-orange-500 flex flex-wrap sm:flex-row items-center justify-center gap-6 p-4 rounded-lg shadow-lg w-full max-w-lg text-white font-semibold text-lg mb-12">

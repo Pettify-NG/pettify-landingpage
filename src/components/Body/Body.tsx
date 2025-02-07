@@ -4,8 +4,8 @@ import Back from '@/assets/orange-woman.png'
 
 export default function Body() {
   return (
-     <div className="mt-20 px-6 md:px-16 lg:px-32">
-      <div className="flex flex-col md:flex-row items-center gap-10">
+     <div className="mt-40 px-6 md:px-16 lg:px-32">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:mt-10">
         
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left">

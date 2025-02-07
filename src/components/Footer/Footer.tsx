@@ -18,10 +18,10 @@ export default function Footer() {
         {/* Navigation Links */}
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 text-center md:text-left">
           <Link href="/" className="hover:underline">Home</Link>
-          <Link href="#Customer" className="hover:underline">Pricing</Link>
-          <Link href="#Faq" className="hover:underline">FAQs</Link>
+          <Link href="/#customer" className="hover:underline">Pricing</Link>
+          <Link href="/#faq" className="hover:underline">FAQs</Link>
           <Link href="/Blog" className="hover:underline">Blog</Link>
-          <Link href="#Contact" className="hover:underline">Contact</Link>
+          <Link href="/#contact" className="hover:underline">Contact</Link>
         </div>
 
         {/* Legal Links */}

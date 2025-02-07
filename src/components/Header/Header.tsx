@@ -2,7 +2,7 @@
 import React, {useState} from 'react'
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import Logo from '@/assets/Pettify__11_-removebg-preview.png'
+import Logo from '@/assets/Pettify__11_-removebg-preview.png';
 import Image from "next/image";
 
 
@@ -11,7 +11,6 @@ export default function Header() {
 //  const scrollToSection = (id) => {
 //     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 //   };
- 
 
   return (
       <header className="bg-gray-300 shadow-md fixed top-0 left-0 w-full z-50">
@@ -21,23 +20,23 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6">
-          <Link href="/" className="text-orange-600 hover:underline font-DM_sans">
+          <Link href="/#header" className="text-orange-600 hover:underline font-DM_sans">
             Home
           </Link>
-          <Link href="/" className="text-orange-600 hover:underline">
+          <Link href="/#pricing" className="text-orange-600 hover:underline">
             Pricing
           </Link>
-          <Link href="/" className="text-orange-600 hover:underline">
+        <Link href="/#faq" className="text-orange-600 hover:underline">
             FAQs
           </Link>
-          <Link href="/Blog" className="text-orange-600 hover:underline">
+          <Link href="/Blog" className="text-orange-600 hover:underline" >
             Blog
           </Link>
-          <Link href="/" className="text-orange-600 hover:underline">
+         <Link href="/#contact" className="text-orange-600 hover:underline">
             Contact
           </Link>
            <Link href="/create">
-    <button className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:underline">
+<button className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:underline">
       Create A Free Account
     </button>
   </Link>
@@ -58,16 +57,16 @@ export default function Header() {
           <Link href="/" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
             Home
           </Link>
-          <Link href="/pricing" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
+          <Link href="/#pricing" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
             About
           </Link>
-          <Link href="/faqs" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
+          <Link href="/#faqs" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
             Services
           </Link>
-          <Link href="/blog" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
+          <Link href="/#blog" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
             Blog
           </Link>
-          <Link href="/contact" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
+          <Link href="/#contact" className="block py-2 text-orange-600 hover:underline" onClick={() => setIsOpen(false)}>
             Contact
           </Link>
           <Link href='/create' className='bg-orange-600 text-white px-4 py-2 mb-2 rounded-lg hover:underline'  >Create A Free Account</Link>
