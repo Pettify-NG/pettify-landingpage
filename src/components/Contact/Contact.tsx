@@ -1,4 +1,4 @@
-"use client"; // Required for Next.js 13+ App Router
+"use client"; 
 
 import { useState } from "react";
 
@@ -12,17 +12,24 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000); // Reset message after 3 seconds
+
+    // Simulate sending data to a server (replace with actual API call)
+    try {
+      console.log("Form Data:", formData);
+
+      // Simulate a successful submission
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 3000); // Reset success message after 3 seconds
+
+      // Clear the form after submission
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
-<<<<<<< HEAD
-    <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-10"id="contact">
-=======
-    <div id="contact" className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-10">
->>>>>>> bfcec4e5800a7ae4ed206e241235437288d8c134
+    <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-10" id="contact">
       <h2 className="text-2xl font-bold text-orange-500 mb-4 text-center">Contact Us</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name Field */}

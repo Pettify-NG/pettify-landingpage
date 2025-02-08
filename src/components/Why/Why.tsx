@@ -3,17 +3,23 @@ import Image from 'next/image';
 import Titi from '@/assets/mypics.jpg';
 import { Linkedin } from 'lucide-react';
 import Link from 'next/link';
+import { DM_Sans, Plus_Jakarta_Sans } from 'next/font/google';
+
+
+const dmSans = DM_Sans({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-dm-sans' });
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-plus-jakarta' });
 
 export default function Why() {
   return (
     <div className='flex flex-col md:flex-row items-center justify-center p-8 bg-gray-100 rounded-lg shadow-lg'>
       {/* Left Side */}
       <div className='flex flex-col items-center text-center md:w-1/3 p-4'>
-        <h2 className='text-2xl font-bold text-orange-500'>Why Pettify</h2>
-        <h3 className='text-lg font-semibold mt-2 text-orange-500'>Founder's Story</h3>
+       <h2 className="{`text-7xl font-bold text-orange-500 text-center w-full  ${plusJakartaSans.className}`}">Why Pettify ?</h2>
+
+        <h3 className='{`text-lg font-semibold mt-2 text-orange-500 ${dmSans.className}`}'>Founder's Story</h3>
         <Image src={Titi} alt='Titlayo Sunday' width={300} height={300} className=' mt-4 shadow-md' />
-        <p className='text-orange-500 font-mono font-semibold mt-2'>Titlayo Sunday</p>
-        <p className='text-orange-500 font-mono font-semibold mt-2'>CEO/Founder</p>
+        <p className='{`text-orange-500 font-mono font-semibold mt-2 ${dmSans.className}`'>Titlayo Sunday</p>
+        <p className='{`text-orange-500 font-mono font-semibold mt-2 ${dmSans.className}`'>CEO/Founder</p>
         <Link href="https://www.linkedin.com/in/thetitilayo"><Linkedin className='text-orange-500 mt-2 cursor-pointer' /></Link>
       </div>
 

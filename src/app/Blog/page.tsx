@@ -6,7 +6,7 @@ import Link from 'next/link';
 import myLogo from '@/assets/pettify-logo-removebg-preview.png';
 import { CiHeart } from "react-icons/ci";
 import { IoShareSocialSharp } from "react-icons/io5";
-import Header from "@/components/header/header";
+import Header from "@/components/header/Header";
 import Footer from '@/components/footer/footer';
 
 export default function Blog() {
@@ -19,7 +19,7 @@ export default function Blog() {
       <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center mt-40">
         {/* Section Title */}
         <h2 className="text-orange-500 font-serif text-center text-5xl md:text-6xl font-bold mb-6">
-          Our Blog
+          Stories & More
         </h2>
 
         {/* Description */}
